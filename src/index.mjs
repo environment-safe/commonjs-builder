@@ -1,6 +1,5 @@
 import * as fs from 'fs';
 import { join } from 'path';
-import babel from '@babel/core';
 import { transform } from '@babel/core';
 import { forEachEmission as forEach } from 'async-arrays/async-arrays.mjs';
 
@@ -23,12 +22,12 @@ export const transformDirectory = async (source, destination)=>{
                             ['search-and-replace', {
                                 rules: [
                                     {
-                                      search: /\.mjs/,
-                                      replace: ".cjs"
+                                        search: /\.mjs/,
+                                        replace: '.cjs'
                                     },
                                     {
-                                      search: /\/src\//,
-                                      replace: "/dist/"
+                                        search: /\/src\//,
+                                        replace: '/dist/'
                                     }
                                 ]
                             }]

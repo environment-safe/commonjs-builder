@@ -1,6 +1,6 @@
 {
-    "name": "commonjs-builder",
-    "version": "0.0.1",
+    "name": "@environment-safe/commonjs-builder",
+    "version": "0.0.2",
     "type": "module",
     "main": "dist/index.mjs",
     "module": "src/index.mjs",
@@ -40,6 +40,9 @@
         "jsdoc-to-markdown": "^8.0.0",
         "mocha": "^10.2.0",
         "tsd-jsdoc": "^2.5.0"
+    },
+    "bin":{
+        "build-commonjs":"./bin/build.mjs"
     },
     "scripts": {
         "lint": "./node_modules/.bin/eslint src/*.mjs test/*.mjs",
