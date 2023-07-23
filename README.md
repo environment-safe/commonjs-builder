@@ -4,6 +4,7 @@ Build commonjs assets from native browser compatible esmodules from your src dir
 
 Usage
 -----
+To build the assets and add the target to your scripts entry:
 
 ```bash
 npm install --save-dev commonjs-builder
